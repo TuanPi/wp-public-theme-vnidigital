@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Top Notice ---------------------------------------------------*/
+
+#topnotice {
+	width: 100%;
+	display: block;
+	min-height: 36px;
+	position: relative;
+	z-index: 2;
+	/* Medium devices (tablets, less than 992px) */
+	@media (max-width: 991.98px) { 
+		display: none !important;
+	}
+	a.link {
+		display: block;
+		color: #fff;
+		text-decoration: none!important;
+		padding: 6px 0;
+		font-size: 15px;
+		font-weight: 300;
+		transition: none;
+		background: #456ede;
+		background: -webkit-linear-gradient(left,#7438E8,#456EDE,#07C4D3);
+		background: linear-gradient(to right,#7438E8,#456EDE,#07C4D3);
+		background-repeat: repeat-x;
+	}
+	.outline {
+		border: 1px dashed #fff;
+		display: inline-block;
+		padding: 0 5px;
+	}
+	.btn {
+		float: right;
+		display: block;
+		background: #fff;
+		background: rgba(255,255,255,.25);
+		color: #fff;
+		padding: 3px 14px;
+		width: 115px;
+		border-radius: 4px;
+		font-size: 11px;
+		font-weight: 500;
+		text-transform: uppercase;
+		position: relative;
+	}
+}

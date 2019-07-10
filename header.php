@@ -22,10 +22,18 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'vnidigital' ); ?></a>
+	<!-- <a class="skip-link screen-reader-text" href="#content"><?php //esc_html_e( 'Skip to content', 'vnidigital' ); ?></a> -->
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div id="topnotice">
+			<a href="https://phanhuutuan.com/" class="link" target="_blank">
+				<div class="container clr">
+					Giao diện được xây dựng dựa trên <span class="outline">bootstrap</span> bởi Phan Hữu Tuấn<span
+						class="btn">Xem thêm<span class="icon icon-right" aria-hidden="true"></span></span>
+				</div>
+			</a>
+		</div>
+		<div class="site-branding d-none">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -44,15 +52,53 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'vnidigital' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
+		
+
+<!-- <nav id="site-navigation" class="main-navigation"> -->
+		<!-- Navigation -->
+		<nav id="pi-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<?php 
+				if( $catePa == 31 )
+					echo '<div class="container-fluid">';
+				else {
+					echo '<div class="container">';
+				}
 			?>
-		</nav><!-- #site-navigation -->
+			
+				<a class="navbar-brand d-none" href="<?php echo home_url() ?>">
+					<!-- <img src="/wp-content/uploads/2019/07/logo-w-45px.png"
+						style="margin-right: 3px; margin-top: -2px;" />
+					ELECTRONICVN -->
+					<?php the_custom_logo();?>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+					aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<?php 
+						wp_nav_menu( array(
+							'theme_location'  => 'menu-pi', // Gọi menu đã đăng ký trong function
+							'menu_id'        => 'primary-menu',
+							'depth'           => 2,     // Cấu hình dropdown 2 cấp
+							'container'       => false, // Thẻ div bọc menu
+							'menu_class'      => 'navbar-nav ml-auto', // Class của nav bootstrap
+							'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+							'walker'          => new WP_Bootstrap_Navwalker()
+						));
+					?>
+					<!-- Navbar-nav with FORM -->
+					<li class="navbar-nav">
+						<form action="/">
+							<div class="input-group">
+								<input type="text" class="pi-form-control" name="s" placeholder="Tìm kiếm...">
+								<button class="pi-btn-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</div>
+						</form>
+					</li>
+				</div>
+			</div>
+		</nav>
 
 	</header><!-- #masthead -->
 

@@ -1,0 +1,32 @@
+
+/*--------------------------------------------------------------
+# Navigation Bar -----------------------------------------------*/
+
+.custom-logo-link {
+	object-fit: scale-down;
+	width: 200px;
+}
+
+.navbar-nav{
+	.nav-link {
+		color: #FFF;
+		white-space: nowrap; /*Văn bản hiển thị trên cùng một hàng*/
+	}
+} 
+
+.input-group {
+    -ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	.pi-btn-search {
+		background-color: transparent;
+		border-width: 0px;
+		color: #FFF;
+	}
+
+	.pi-form-control {
+		border: 1px solid #e2e6e8;
+		border-radius: 5px;
+		padding: 2px 0px 2px 20px;
+		width: 170px;
+	}
+}
