@@ -2,95 +2,95 @@
 @import "../../variables/colors";
 
 #footer-vnidigital {
-	background-color: #3c3d41;
-	color: white;
-	padding-top: 30px;
-	flex: 0 0 auto;
+  background-color: #3c3d41;
+  color: white;
+  padding-top: 30px;
+  flex: 0 0 auto;
   -webkit-flex: 0 0 auto;
-	@media screen and (max-width: 767px) {
-		text-align: center;
-	}
-	.footer-copyright {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  .footer-copyright {
     background-color: #333333;
     padding-top: 3px;
     padding-bottom: 3px;
     text-align: center;
-	}
-	.row {
+  }
+  .row {
     margin-bottom: 60px;
-	}
-	.navbar-brand {
+  }
+  .navbar-brand {
     margin-top: 45px;
     height: 65px;
-	}
-	.footer-copyright {
-		p {
-			margin: 10px;
-			color: #ccc;
-		}
-	}
-	ul {
+  }
+  .footer-copyright {
+    p {
+      margin: 10px;
+      color: #ccc;
+    }
+  }
+  ul {
     list-style-type: none;
     padding-left: 0;
     line-height: 1.7;
-	}
-	h5 {
+  }
+  h5 {
     font-size: 18px;
     color: white;
     font-weight: bold;
     margin-top: 30px;
-	}
-	h2{
-		a{
-			font-size: 50px;
-			text-align: center;
-			color: #fff;
-		}
-	}
-	a {
+  }
+  h2{
+    a{
+      font-size: 50px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+  a {
     color: #d2d1d1;
-		text-decoration: none;
-		&:hover {
-			text-decoration: none;
-			color: white;
-		}
-		&:focus {
-			text-decoration: none;
-			color: white;
-		}
-	}
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+    &:focus {
+      text-decoration: none;
+      color: white;
+    }
+  }
 
-	.social-networks {
+  .social-networks {
     text-align: center;
     padding-top: 30px;
-		padding-bottom: 16px;
-		a {
-			font-size: 32px;
-			color: #f9f9f9;
-			padding: 10px;
-			transition: 0.2s;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-	.facebook{
-		&:hover {
-			color: #0077e2;
-		}
-	}
+    padding-bottom: 16px;
+    a {
+      font-size: 32px;
+      color: #f9f9f9;
+      padding: 10px;
+      transition: 0.2s;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .facebook{
+    &:hover {
+      color: #0077e2;
+    }
+  }
 
-	.google {
-		&:hover {
-			color: #ef1a1a;
-		}
-	}
-	.twitter {
-		&:hover {
-			color: #00aced;
-		}
-	}
-	.btn {
+  .google {
+    &:hover {
+      color: #ef1a1a;
+    }
+  }
+  .twitter {
+    &:hover {
+      color: #00aced;
+    }
+  }
+  .btn {
     color: white;
     background-color: #d84b6b;
     border-radius: 20px;
@@ -100,7 +100,7 @@
     margin: 0 auto;
     margin-top: 10px;
     line-height: 25px;
-	}
+  }
 }
 
 
