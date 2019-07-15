@@ -7,12 +7,53 @@
 	width: 200px;
 }
 
-.navbar-nav{
+.navbar {
+	z-index: 1000;
+	background-color: #343a40;
+}
+
+.navbar-nav {
 	.nav-link {
-		color: #FFF;
+		color: #FFF !important;
 		white-space: nowrap; /*Văn bản hiển thị trên cùng một hàng*/
 	}
-} 
+	.input-group {
+		margin-left: 15px;
+		@media (max-width: 991.98px) { /* Medium devices (tablets, less than 992px) */
+			margin-left: 0px !important;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.nav-color-transparent {
+	padding-top: 15px;
+	background-color: rgba(255, 255, 255, 0);
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out; 
+	@media (max-width: 991.98px) { /* Medium devices (tablets, less than 992px) */
+			background-color: #343a40;
+	}
+}
+
+.admin-bar {
+	.sticky {
+		top: 32px;
+	}
+}
+.sticky {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #343a40;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out; 
+}
 
 .input-group {
     -ms-flex-wrap: nowrap;
@@ -28,5 +69,23 @@
 		border-radius: 5px;
 		padding: 2px 0px 2px 20px;
 		width: 170px;
+		@media (max-width: 991.98px) { /* Medium devices (tablets, less than 992px) */
+			width: 100% !important;
+		}
 	}
+}
+
+/* ================================= homepage-header ================================== */
+#homepage-header {
+	position: relative;
+	margin-top: -200px;
+	z-index: 0;
+	padding: 328px 0 140px;
+	color: #fff;
+	//background: #1d2733 url(wp-content/uploads/2019/07/backgroud-post.png) no-repeat center center;
+	// background-attachment: fixed;
+	// -webkit-background-size: cover;
+	// -moz-background-size: cover;
+	// background-size: cover;
+	// -o-background-size: cover;
 }
